@@ -22,6 +22,3 @@ Sistema de agendamento de luxo desenvolvido com foco em experiência do usuário
 Acesse: https://agendamento-barbearia-eight.vercel.app/
 
 <img src="img/imagem do projeto.png" alt="imagem do projeto">
-
----
-Projetado por **Ingrid Farias** - Desenvolvedora Full Stack em formação.
