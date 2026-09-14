@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | Barbearia Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Barbearia Pro</h1>
+            <p>Reserve seu horário com estilo</p>
+        </header>
+
+        <form id="agendamentoForm">
+            <div class="section-title">Cliente</div>
+            <div class="input-group">
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="section-title">Serviço</div>
+            <div class="input-group">
+                <select id="servico" required>
+                    <option value="" disabled selected>O que vamos fazer hoje?</option>
+                    <option value="Corte Degradê">Corte Degradê</option>
+                    <option value="Corte + Barba">Corte + Barba</option>
+                    <option value="Barboterapia">Barboterapia</option>
+                    <option value="Pezinho / Acabamento">Pezinho / Acabamento</option>
+                    <option value="Sobrancelha">Sobrancelha</option>
+                </select>
+            </div>
+
+            <div class="section-title">Data e Hora</div>
+            <div class="grid-inputs">
+                <input type="date" id="data" required>
+                <input type="time" id="hora" required>
+            </div>
+            <small class="helper-text">* Atendimento Terça a Sábado</small>
+
+            <div class="section-title">Preferência</div>
+            <div class="input-group">
+                <select id="barbeiro">
+                    <option value="Qualquer Barbeiro">Qualquer Barbeiro</option>
+                    <option value="Mestre Barbeiro">Mestre Barbeiro</option>
+                    <option value="Barbeiro Júnior">Barbeiro Júnior</option>
+                </select>
+            </div>
+
+            <textarea id="obs" rows="2" placeholder="Algum detalhe ou estilo específico?"></textarea>
+
+            <button type="submit" class="btn-enviar">Agendar via WhatsApp</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
